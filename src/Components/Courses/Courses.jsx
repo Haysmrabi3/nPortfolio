@@ -39,7 +39,7 @@ export default function Courses() {
 
 
         <section>
-            <div className="container mx-auto mt-36 p-10">
+            <div id='Courses' className="container mx-auto mt-36 p-10">
                 <h2 className='text-center font-bold text-4xl md:text-5xl text-white mb-16'>Courses</h2>
                 <Timeline>
                     <TimelineItem>

@@ -90,7 +90,7 @@ const projects = [
     return <>
 
 
-        <section>
+        <section id='Project' className='scroll-m-30'>
             <div className="container mx-auto ">
                 <h2 className='text-center font-bold text-4xl md:text-5xl text-white'>Projects</h2>
                 <p className='text-center font-semibold mt-1 text-sm text-gray-400'>A collection of projects that showcase my skills in web development, design, and problem-solving.</p>

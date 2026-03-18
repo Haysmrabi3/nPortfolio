@@ -41,7 +41,7 @@ export default function Skills() {
 
   return <>
   
-  <section id="Skills" className="frist-color min-h-screen py-20">
+  <section id="Skills" className="frist-color min-h-screen py-20 scroll-m-30">
   <div className="container mx-auto">
     <h2 className="text-center font-bold text-4xl md:text-5xl text-white">
       Technical Skills

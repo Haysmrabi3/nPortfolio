@@ -19,8 +19,9 @@
 .three {
      background-color: #25d366;
 }
-
-
 .pq  {
     background-color: #9c9c9c23;
+}
+html {
+  scroll-behavior: smooth;
 }

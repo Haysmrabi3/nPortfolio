@@ -4,10 +4,11 @@ import H from '../../assets/Skills/h.jpg'
 
 const navigation = [
     { name: 'Home', href: '#' },
-    { name: 'About', href: '#' },
-    { name: 'Services', href: '#' },
-    { name: 'Pricing', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'About', href: '#About' },
+    // { name: 'Services', href: '#Services' },
+    { name: 'Skills', href: '#Skills' },
+    { name: 'Project', href: '#Project' },
+    { name: 'Contact', href: '#Contact' },
 ]
 
 export default function NavBar() {
@@ -34,8 +35,8 @@ export default function NavBar() {
                         {/* Desktop Button */}
                         <div className="hidden md:flex">
                             <button className="ml-6 px-5 py-2 border-fg-brand text-white rounded-lg hover:bg-fg-brand hover:text-white second-color transition font-semibold cursor-pointer">
-                                Resume
-                                <i className="fa-solid fa-download"></i>
+                                <a  download  target='_blank' href='https://drive.google.com/drive/folders/1lqjTZeYOJFJYnq3vo4fN2F7xZQdYwQPx?usp=sharing'> Resume <i className="fa-solid fa-download"></i> </a>
+                                
                                 </button>
                         </div>
 

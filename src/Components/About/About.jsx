@@ -13,7 +13,7 @@ import boy from '../../assets/boy.json'
 
 export default function About() {
     return <>
-<section className="min-h-screen">
+<section id='About' className="min-h-screen scroll-m-30">
   <div className="container mx-auto frist-color">
     <h2 className="text-center text-white font-bold text-4xl md:text-5xl mb-10">
       About Me

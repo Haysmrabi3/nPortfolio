@@ -20,7 +20,7 @@ export default function Contacts() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_kiurv6x', 'template_47nmwq3', form.current, {
+        emailjs.sendForm('service_92jfjvr', 'template_47nmwq3', form.current, {
             publicKey: 'RYgFYxc4iPI7DPmmh',
         }
         )
@@ -59,7 +59,7 @@ export default function Contacts() {
 
 
     return <>
-        <section className=''>
+        <section id='Contact'>
             <div className="container mx-auto mt-32 lg:w-2/4 p-10">
                 <h2 className='text-center font-bold text-4xl md:text-5xl text-white'>Contact Me</h2>
 

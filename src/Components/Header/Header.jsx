@@ -29,7 +29,7 @@ export default function Header() {
 
     return <>
 
-        <header className='h-[100vh] bg-transparent  frist-color '>
+        <header id='Home' className='h-[100vh] bg-transparent  frist-color '>
             <div className="container mx-auto flex items-center justify-start h-[100vh]">
                 <div className=" p-5 lg:w-1/2 ">
                     <div className="flex">
