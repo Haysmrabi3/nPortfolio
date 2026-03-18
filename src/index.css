@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+
+.frist-color {
+    color: #A1A1A1;
+}
+
+.second-color {
+    background-color: #262626;
+}
+.one {
+     background-color: #0e6bff;
+}
+.two {
+     background-color: #6e5494;
+}
+.three {
+     background-color: #25d366;
+}
+
+
+.pq  {
+    background-color: #9c9c9c23;
+}
