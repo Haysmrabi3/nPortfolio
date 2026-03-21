@@ -3,6 +3,7 @@ import Ecommerce from '../../assets/Projects/E-commerce/Home.png'
 import Yummy from '../../assets/Projects/Yummy/Home.png'
 import GamesApp from '../../assets/Projects/GameApp/gamePic.png'
 import Fokir from '../../assets/Projects/Fokir/fokir.png'
+import sMovies from '../../assets/Projects/sMovies/Screenshot 2026-03-21 151432.jpg'
 import Mealfy from '../../assets/Projects/Mealfy/Mealfy.png'
 import Weather from '../../assets/Projects/Weather/Weather.png'
 import Englsih from '../../assets/Projects/English-track/Screenshot 2025-02-10 103042.png'
@@ -63,6 +64,13 @@ const projects = [
     demo: "https://haysmrabi3.github.io/Weather-App/",
     github: "https://github.com/Haysmrabi3/Weather-App"
   },
+    {
+    name: "sMovies App",
+    skills: [HTML, CSS , Js],
+    img: sMovies,
+    demo: "https://haysmrabi3.github.io/sMovies-App/",
+    github: "https://github.com/Haysmrabi3/sMovies-App"
+  } ,
   {
     name: "Mealfy",
     skills: [HTML, CSS],
