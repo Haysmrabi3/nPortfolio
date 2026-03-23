@@ -88,13 +88,13 @@ const projects = [
 ];
 
 const NextProjects = [
-   {
+  {
     name: "Hotel App",
     skills: [HTML, CSS, Js, Tailwind, NextJs],
     img: HotelApp,
     demo: "https://hotelapp-sable.vercel.app/",
     github: "https://github.com/Haysmrabi3/Hotel-App",
-  }
+  },
 ];
 
 const reactProjects = [
@@ -125,11 +125,11 @@ const reactProjects = [
     img: Englsih,
     demo: "https://haysmrabi3.github.io/English-track/",
     github: "https://github.com/Haysmrabi3/English-track",
-  }
+  },
 ];
 
 const BaseProjects = [
-   {
+  {
     name: "Weather App",
     skills: [HTML, CSS, Js],
     img: Weather,
@@ -160,44 +160,104 @@ const BaseProjects = [
 ];
 
 const FreeProjects = [
-   {
+  {
     name: "Fabrica",
-    skills: [HTML, CSS, Js , ReactLogo],
+    skills: [HTML, CSS, Js, ReactLogo],
     img: Fabrica,
     demo: "https://fabrica-teal.vercel.app/#/#home",
     github: "",
-  }
+  },
 ];
-
-
-const react = {
-    
-}
 
 export default function Tabs() {
   const [active, setActive] = useState("All");
 
+  const renderCards = (list) => (
+    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {list.map((project, index) => (
+        <div
+          key={index}
+          className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition duration-300"
+        >
+          {/* Image */}
+          <div className="h-[200px] overflow-hidden">
+            <img
+              src={project.img}
+              alt={project.name}
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Content */}
+          <div className="p-4">
+            <div className="flex justify-between items-center">
+              <h3 className="text-lg font-semibold">{project.name}</h3>
+
+              <div className="flex gap-3 text-xl">
+                {/* Demo */}
+                {project.demo ? (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa-solid fa-eye"></i>
+                  </a>
+                ) : null}
+
+                {/* GitHub */}
+                {project.github ? (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa-brands fa-github"></i>
+                  </a>
+                ) : null}
+              </div>
+            </div>
+
+            {/* Skills */}
+            {project.skills && project.skills.length > 0 ? (
+              <div className="flex flex-wrap gap-2 mt-4">
+                {project.skills.map((skill, i) => (
+                  <img
+                    key={i}
+                    src={skill}
+                    alt="skill"
+                    className="w-8 h-8"
+                  />
+                ))}
+              </div>
+            ) : null}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+
   return (
     <div className="w-full max-w-7xl mx-auto mt-10 px-4 text-white">
-      
       {/* Tabs */}
       <div className="flex justify-center gap-6 border-b border-gray-700 pb-2">
         <button
           onClick={() => setActive("All")}
           className={`pb-2 transition ${
             active === "All"
-              ? "border-b-2 border-white "
-              : "text-gray-400 hover:text-white"
+              ? "border-b-2 border-white cursor-pointer "
+              : "text-gray-400 hover:text-white cursor-pointer"
           }`}
         >
           All-Projects
         </button>
+
         <button
           onClick={() => setActive("React")}
           className={`pb-2 transition ${
             active === "React"
-              ? "border-b-2 border-white "
-              : "text-gray-400 hover:text-white"
+              ? "border-b-2 border-white cursor-pointer "
+              : "text-gray-400 hover:text-white cursor-pointer"
           }`}
         >
           React-js
@@ -207,32 +267,30 @@ export default function Tabs() {
           onClick={() => setActive("Next")}
           className={`pb-2 transition ${
             active === "Next"
-              ? "border-b-2 border-white "
-              : "text-gray-400 hover:text-white"
+              ? "border-b-2 border-white cursor-pointer "
+              : "text-gray-400 hover:text-white cursor-pointer"
           }`}
         >
           Next-js
         </button>
 
-
         <button
           onClick={() => setActive("Base")}
           className={`pb-2 transition ${
             active === "Base"
-              ? "border-b-2 border-white "
-              : "text-gray-400 hover:text-white"
+              ? "border-b-2 border-white cursor-pointer "
+              : "text-gray-400 hover:text-white cursor-pointer"
           }`}
         >
           Html & css & js
         </button>
 
-        
         <button
           onClick={() => setActive("Free")}
           className={`pb-2 transition ${
             active === "Free"
-              ? "border-b-2 border-white "
-              : "text-gray-400 hover:text-white"
+              ? "border-b-2 border-white cursor-pointer "
+              : "text-gray-400 hover:text-white cursor-pointer"
           }`}
         >
           FreeLance
@@ -241,208 +299,13 @@ export default function Tabs() {
 
       {/* Content */}
       <div className="mt-6">
-        
-        {/* Projects */}
-        {active === "All" && (
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition duration-300"
-              >
-                {/* Image */}
-                <div className="h-[200px] overflow-hidden">
-                  <img
-                    src={project.img}
-                    alt={project.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="p-4">
-                  <div className="flex justify-between items-center">
-                    <h3 className="text-lg font-semibold">
-                      {project.name}
-                    </h3>
-
-                    <div className="flex gap-3 text-xl">
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        👁
-                      </a>
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        🐱
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Skills */}
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    {project.skills.map((skill, i) => (
-                      <img
-                        key={i}
-                        src={skill}
-                        alt="skill"
-                        className="w-8 h-8"
-                      />
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-                {/* Projects */}
-        {active === "React" && (
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {reactProjects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition duration-300"
-              >
-                {/* Image */}
-                <div className="h-[200px] overflow-hidden">
-                  <img
-                    src={project.img}
-                    alt={project.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="p-4">
-                  <div className="flex justify-between items-center">
-                    <h3 className="text-lg font-semibold">
-                      {project.name}
-                    </h3>
-
-                    <div className="flex gap-3 text-xl">
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        👁
-                      </a>
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        🐱
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Skills */}
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    {project.skills.map((skill, i) => (
-                      <img
-                        key={i}
-                        src={skill}
-                        alt="skill"
-                        className="w-8 h-8"
-                      />
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-                {/* Projects */}
-        {active === "Next" && (
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {NextProjects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition duration-300"
-              >
-                {/* Image */}
-                <div className="h-[200px] overflow-hidden">
-                  <img
-                    src={project.img}
-                    alt={project.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="p-4">
-                  <div className="flex justify-between items-center">
-                    <h3 className="text-lg font-semibold">
-                      {project.name}
-                    </h3>
-
-                    <div className="flex gap-3 text-xl">
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        👁
-                      </a>
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        🐱
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Skills */}
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    {project.skills.map((skill, i) => (
-                      <img
-                        key={i}
-                        src={skill}
-                        alt="skill"
-                        className="w-8 h-8"
-                      />
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* About */}
-        {active === "Base" && <>
-                  <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {BaseProjects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition duration-300"
-              >
-                {/* Image */}
-                <div className="h-[200px] overflow-hidden">
-                  <img
-                    src={project.img}
-                    alt={project.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-              </div>
-            ))}
-          </div>
-        
-        
-        
-        
-        </>}
-        {active === "Free" && <>
-                  <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {FreeProjects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition duration-300"
-              >
-                {/* Image */}
-                <div className="h-[200px] overflow-hidden">
-                  <img
-                    src={project.img}
-                    alt={project.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-              </div>
-            ))}
-          </div>
-        
-        
-        
-        
-        </>}
+        {active === "All" && renderCards(projects)}
+        {active === "React" && renderCards(reactProjects)}
+        {active === "Next" && renderCards(NextProjects)}
+        {active === "Base" && renderCards(BaseProjects)}
+        {active === "Free" && renderCards(FreeProjects)}
       </div>
     </div>
   );
 }
+
