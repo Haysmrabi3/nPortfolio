@@ -10,6 +10,7 @@ import Mealfy from "../../assets/Projects/Mealfy/Mealfy.png";
 import Weather from "../../assets/Projects/Weather/Weather.png";
 import HotelApp from "../../assets/Projects/Hotel-App/hotelApp.jpg";
 import Englsih from "../../assets/Projects/English-track/Screenshot 2025-02-10 103042.png";
+import Fabrica from "../../assets/Projects/Fabrica/Fabrica.jpg";
 
 // skills icons
 import Bootstrap from "../../assets/Skills/icons8-bootstrap.svg";
@@ -158,13 +159,23 @@ const BaseProjects = [
   },
 ];
 
+const FreeProjects = [
+   {
+    name: "Fabrica",
+    skills: [HTML, CSS, Js , ReactLogo],
+    img: Fabrica,
+    demo: "https://fabrica-teal.vercel.app/#/#home",
+    github: "",
+  }
+];
+
 
 const react = {
     
 }
 
 export default function Tabs() {
-  const [active, setActive] = useState("projects");
+  const [active, setActive] = useState("All");
 
   return (
     <div className="w-full max-w-7xl mx-auto mt-10 px-4 text-white">
@@ -203,6 +214,7 @@ export default function Tabs() {
           Next-js
         </button>
 
+
         <button
           onClick={() => setActive("Base")}
           className={`pb-2 transition ${
@@ -212,6 +224,18 @@ export default function Tabs() {
           }`}
         >
           Html & css & js
+        </button>
+
+        
+        <button
+          onClick={() => setActive("Free")}
+          className={`pb-2 transition ${
+            active === "Free"
+              ? "border-b-2 border-white "
+              : "text-gray-400 hover:text-white"
+          }`}
+        >
+          FreeLance
         </button>
       </div>
 
@@ -373,6 +397,30 @@ export default function Tabs() {
         {active === "Base" && <>
                   <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {BaseProjects.map((project, index) => (
+              <div
+                key={index}
+                className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition duration-300"
+              >
+                {/* Image */}
+                <div className="h-[200px] overflow-hidden">
+                  <img
+                    src={project.img}
+                    alt={project.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+              </div>
+            ))}
+          </div>
+        
+        
+        
+        
+        </>}
+        {active === "Free" && <>
+                  <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {FreeProjects.map((project, index) => (
               <div
                 key={index}
                 className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition duration-300"

@@ -7,6 +7,7 @@ import sMovies from '../../assets/Projects/sMovies/Screenshot 2026-03-21 151432.
 import Mealfy from '../../assets/Projects/Mealfy/Mealfy.png'
 import Weather from '../../assets/Projects/Weather/Weather.png'
 import HotelApp from '../../assets/Projects/Hotel-App/hotelApp.jpg'
+import Fabrica from '../../assets/Projects/Fabrica/Fabrica.jpg'
 import Englsih from '../../assets/Projects/English-track/Screenshot 2025-02-10 103042.png'
 import Bootstrap from "../../assets/Skills/icons8-bootstrap.svg";
 import HTML from "../../assets/Skills/html5.a7362949.svg";
