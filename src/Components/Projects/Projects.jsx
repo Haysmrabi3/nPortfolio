@@ -6,11 +6,13 @@ import Fokir from '../../assets/Projects/Fokir/fokir.png'
 import sMovies from '../../assets/Projects/sMovies/Screenshot 2026-03-21 151432.jpg'
 import Mealfy from '../../assets/Projects/Mealfy/Mealfy.png'
 import Weather from '../../assets/Projects/Weather/Weather.png'
+import HotelApp from '../../assets/Projects/Hotel-App/hotelApp.jpg'
 import Englsih from '../../assets/Projects/English-track/Screenshot 2025-02-10 103042.png'
 import Bootstrap from "../../assets/Skills/icons8-bootstrap.svg";
 import HTML from "../../assets/Skills/html5.a7362949.svg";
 import CSS from '../../assets/Skills/icons8-css.svg';
 import Js from '../../assets/Skills/javascript.455da02c.svg';
+import NextJs from '../../assets/Skills/next-js.svg';
 import Tailwind from '../../assets/Skills/tailwind-css.svg';
 import ReactLogo from "../../assets/Skills/react.svg";
 
@@ -56,6 +58,13 @@ const projects = [
     img: Englsih,
     demo: "https://haysmrabi3.github.io/English-track/",
     github: "https://github.com/Haysmrabi3/English-track"
+  },
+  {
+    name: "Fokir",
+    skills: [HTML, CSS , Js , Tailwind ,NextJs  ],
+    img: HotelApp,
+    demo: "https://hotelapp-sable.vercel.app/",
+    github: "https://github.com/Haysmrabi3/Hotel-App"
   },
   {
     name: "Weather App",

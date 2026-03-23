@@ -7,6 +7,7 @@ import Skills from './Components/Skills/Skills'
 import Projects from './Components/Projects/Projects'
 import Courses from './Components/Courses/Courses'
 import Contacts from './Components/Contacts/Contacts'
+import Tabs from './Components/Tabs/Tabs'
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Header />
       <About/>
       <Skills/>
-      <Projects/>
+      {/* <Projects/> */}
+      <Tabs/>
       <Courses/>
       <Contacts/>
       </>
