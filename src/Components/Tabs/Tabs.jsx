@@ -11,6 +11,7 @@ import Weather from "../../assets/Projects/Weather/Weather.png";
 import HotelApp from "../../assets/Projects/Hotel-App/hotelApp.jpg";
 import Englsih from "../../assets/Projects/English-track/Screenshot 2025-02-10 103042.png";
 import Fabrica from "../../assets/Projects/Fabrica/Fabrica.jpg";
+import Solar from "../../assets/Projects/Solar/Solar.jpg";
 
 // skills icons
 import Bootstrap from "../../assets/Skills/icons8-bootstrap.svg";
@@ -156,6 +157,13 @@ const BaseProjects = [
     img: Fokir,
     demo: "https://haysmrabi3.github.io/Fokir/",
     github: "https://github.com/Haysmrabi3/Fokir",
+  },
+  {
+    name: "Solar",
+    skills: [HTML, CSS],
+    img: Solar,
+    demo: "https://haysmrabi3.github.io/Solar-App/",
+    github: "https://github.com/Haysmrabi3/Solar-App",
   },
 ];
 
