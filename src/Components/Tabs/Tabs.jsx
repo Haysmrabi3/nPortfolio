@@ -12,6 +12,7 @@ import HotelApp from "../../assets/Projects/Hotel-App/hotelApp.jpg";
 import Englsih from "../../assets/Projects/English-track/Screenshot 2025-02-10 103042.png";
 import Fabrica from "../../assets/Projects/Fabrica/Fabrica.jpg";
 import Solar from "../../assets/Projects/Solar/Solar.jpg";
+import DashBoard from "../../assets/Projects/DashBoard/Dasgboard.jpg";
 
 // skills icons
 import Bootstrap from "../../assets/Skills/icons8-bootstrap.svg";
@@ -29,6 +30,13 @@ const projects = [
     img: Ecommerce,
     demo: "https://haysmrabi3.github.io/Fresh-cart/",
     github: "https://github.com/Haysmrabi3/Fresh-Cart",
+  },
+  {
+    name: "DashBoard",
+    skills: [HTML, CSS, Js, Tailwind, ReactLogo],
+    img: DashBoard,
+    demo: "https://haysmrabi3.github.io/DashBoard/",
+    github: "https://github.com/Haysmrabi3/DashBoard",
   },
   {
     name: "Food Recipes",
@@ -106,6 +114,13 @@ const reactProjects = [
     demo: "https://haysmrabi3.github.io/Fresh-cart/",
     github: "https://github.com/Haysmrabi3/Fresh-Cart",
   },
+  {
+    name: "DashBoard",
+    skills: [HTML, CSS, Js, Tailwind, ReactLogo],
+    img: DashBoard,
+    demo: "https://haysmrabi3.github.io/DashBoard/",
+    github: "https://github.com/Haysmrabi3/DashBoard",
+  } ,
   {
     name: "Food Recipes",
     skills: [HTML, CSS, Js, Bootstrap, ReactLogo],
