@@ -111,6 +111,12 @@ const NextProjects = [
     img: HotelApp,
     demo: "https://hotelapp-sable.vercel.app/",
     github: "https://github.com/Haysmrabi3/Hotel-App",
+  },{
+    name: "E-learning",
+    skills: [HTML, CSS, Js, Tailwind, NextJs],
+    img: Elearning,
+    demo: "https://elearning-alpha-nine.vercel.app/",
+    github: "https://github.com/Haysmrabi3/E-Learning",
   },
 ];
 
