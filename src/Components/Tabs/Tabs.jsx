@@ -13,6 +13,7 @@ import Englsih from "../../assets/Projects/English-track/Screenshot 2025-02-10 1
 import Fabrica from "../../assets/Projects/Fabrica/Fabrica.jpg";
 import Solar from "../../assets/Projects/Solar/Solar.jpg";
 import DashBoard from "../../assets/Projects/DashBoard/Dasgboard.jpg";
+import Elearning from "../../assets/Projects/E-learning/Screenshot 2026-04-09 113853.jpg";
 
 // skills icons
 import Bootstrap from "../../assets/Skills/icons8-bootstrap.svg";
@@ -37,6 +38,13 @@ const projects = [
     img: DashBoard,
     demo: "https://haysmrabi3.github.io/DashBoard/",
     github: "https://github.com/Haysmrabi3/DashBoard",
+  },
+  {
+    name: "E-learning",
+    skills: [HTML, CSS, Js, Tailwind, NextJs],
+    img: Elearning,
+    demo: "https://elearning-alpha-nine.vercel.app/",
+    github: "https://github.com/Haysmrabi3/E-Learning",
   },
   {
     name: "Food Recipes",
